@@ -1,30 +1,31 @@
 ### Trabalho de Desenvolvimento Web 2021/22
 ### Alunas: Emili Everz Golombiéski e Gláucia Dias
 
-#### Requisitos para rodar a Aplicação secauth:
+#### Requisitos para rodar a Aplicação:
 
-1. 
-2. 
-3. 
-4. 
+1. npm instalado
+2. Criação do .env, como exemplo o .env-example
 
-Instruções:
+##### Instruções:
 
-1. 
 2. Suba a api com o comando: 
     ```console
-        $ 
+        $ cd backend
+        $ npm install
+        $ npm run start
     ```
 2. Suba o client com o comando: 
     ```console
-        $ 
+        $ cd frontend
+        $ npm install
+        $ npm run start
     ```
 
 # API:
 
 ## Models:
 ```json
-Artigo: {
+Livro: {
     id: number,
     name: String,
     author: String,
@@ -33,31 +34,29 @@ Artigo: {
 ```
 
 ## Rotas:
-### Cadastrar Artigo
-##### Request
-`POST /api/livros` 
-body {
-    titulo
-}
-##### Response
-    Livro
-    
-### Listar todos os Artigos
-##### Request
-`GET /api/livro` 
-##### Response
-    Livro[]
 
-### Buscar artigo por Id
-##### Request
-`GET /api/livro/:id` 
-##### Response
-    Livro
+### Listar todos os Livros
+* GET /livro
+* Pode receber como url arg: name
+* Retorna: Lista de Objetos de livro   
 
-### Remover artigo
-##### Request
-`DEL /api/livro/:id` 
+### Buscar livro por Id
+* GET /livro/:id
+* Recebe: id do livro
+*retorna: Objeto do Livro, ou resposta de não encontrado
 
-### Remover todos os artigos
-##### Request
-`DEL /api/livros` 
+### Cadastrar Livro
+* Rota: POST /livros 
+* Recebe no body: name, author, ano
+* Retorna: Objeto do livro Cadastrado   
+
+### Atualizar Livro
+* Rota: PUT /livros/:id
+* Recebe no body: name, author, ano
+* Retorna: Objeto do livro Atualizado
+
+### Remover livro
+* DEL /livro/:id 
+
+### Remover todos os livros
+* DEL /livro
