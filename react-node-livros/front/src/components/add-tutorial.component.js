@@ -77,7 +77,7 @@ export default class AddTutorial extends Component {
   render() {
     return (
       <div className="submit-form">
-        { this.state.submitted == false ? (
+        { this.state.submitted ? (
           <div>
             <h4>Livro Salvo com sucesso!</h4>
             <div style={{textAlign: 'center'}}>
