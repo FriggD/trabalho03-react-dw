@@ -36,28 +36,22 @@ Livro: {
 
 ## Rotas:
 
-### Listar todos os Livros
-  GET /livro
-* Pode receber como url arg: name
-* Retorna: Lista de Objetos de livro   
+### Listar todos os Livros:  GET /livro 
+    Pode receber como url arg: name
+    Retorna: Lista de Objetos de livro   
 
-### Buscar livro por Id
-##### GET /livro/:id
-* Recebe: id do livro
-*retorna: Objeto do Livro, ou resposta de não encontrado
+### Buscar livro por Id: GET /livro/:id
+    Recebe: id do livro
+    Retorna: Objeto do Livro, ou resposta de não encontrado
 
-### Cadastrar Livro
-##### Rota: POST /livros 
-* Recebe no body: name, author, ano
-* Retorna: Objeto do livro Cadastrado   
+### Cadastrar Livro: POST /livros 
+    Recebe no body: name, author, ano
+    Retorna: Objeto do livro Cadastrado   
 
-### Atualizar Livro
-##### Rota: PUT /livros/:id
-* Recebe no body: name, author, ano
-* Retorna: Objeto do livro Atualizado
+### Atualizar Livro: PUT /livros/:
+    Recebe no body: name, author, ano
+    Retorna: Objeto do livro Atualizado
 
-### Remover livro
-##### DEL /livro/:id 
+### Remover livro: DEL /livro/:id 
 
-### Remover todos os livros
-##### DEL /livro
+### Remover todos os livros: DEL /livro
