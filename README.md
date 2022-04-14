@@ -8,18 +8,19 @@
 
 ##### Instruções:
 
-2. Suba a api com o comando: 
-    ```console
-        $ cd backend
-        $ npm install
-        $ npm run start
-    ```
+1. Suba a api com o comando: 
+```console
+    $ cd backend
+    $ npm install
+    $ npm run start
+```
+
 2. Suba o client com o comando: 
-    ```console
-        $ cd frontend
-        $ npm install
-        $ npm run start
-    ```
+```console
+    $ cd frontend
+    $ npm install
+    $ npm run start
+```
 
 # API:
 
@@ -36,27 +37,27 @@ Livro: {
 ## Rotas:
 
 ### Listar todos os Livros
-* GET /livro
+  GET /livro
 * Pode receber como url arg: name
 * Retorna: Lista de Objetos de livro   
 
 ### Buscar livro por Id
-* GET /livro/:id
+##### GET /livro/:id
 * Recebe: id do livro
 *retorna: Objeto do Livro, ou resposta de não encontrado
 
 ### Cadastrar Livro
-* Rota: POST /livros 
+##### Rota: POST /livros 
 * Recebe no body: name, author, ano
 * Retorna: Objeto do livro Cadastrado   
 
 ### Atualizar Livro
-* Rota: PUT /livros/:id
+##### Rota: PUT /livros/:id
 * Recebe no body: name, author, ano
 * Retorna: Objeto do livro Atualizado
 
 ### Remover livro
-* DEL /livro/:id 
+##### DEL /livro/:id 
 
 ### Remover todos os livros
-* DEL /livro
+##### DEL /livro
